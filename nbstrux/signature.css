@@ -48,7 +48,7 @@ div.input_area {
     border-width: 1px; 
     border-left-color: #cfcfcf;
     border-image: linear-gradient(to right, #cfcfcf 0%, #fff 66%);
-    border-image-slice: 1% fill;
+    border-image-slice: 1%;
 }
 
 // .code_cell .input .inner_cell { height: 100% }
