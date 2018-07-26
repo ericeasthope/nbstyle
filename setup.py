@@ -1,9 +1,15 @@
-from setuptools import setup, find_packages
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
 
+from setuptools import setup
 setup(
-    name='nbstrux',
-    version='0.0.dev0',
-    author='Eric Easthope', 
-    packages=find_packages(),
-    include_package_data = True
+    name="nbstrux",
+    packages=['nbstyle'],
+    package_dir={
+        'nbstyle': 'nbstyle/nbstyle'
+        },
+    package_data={
+        'nbstyle': ['static/*']
+        },
+    include_package_data=True
 )

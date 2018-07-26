@@ -1,5 +1,5 @@
 {
   "load_extensions": {
-    "nbstyle/static": true
+    "nbstyle/main": true
   }
 }
