@@ -52,5 +52,9 @@ div.input_area {
     border-image-slice: 1%;
 }
 
+div.inner_cell { z-index: 2; }
+div.CodeMirror { background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255,0,0,0) 66%); }
+div.output_subarea { overflow: visible; }
+
 // .code_cell .input .inner_cell { height: 100% }
 // .code_cell { border-color: #fff; flex-direction: row !important; }
