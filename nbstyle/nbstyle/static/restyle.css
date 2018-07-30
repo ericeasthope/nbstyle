@@ -43,7 +43,8 @@ div.cell.selected {
 .notebook_app { background-color: #fff; }
 
 div.input_area {
-    background: #fff;
+    background-color: rgba(0,0,0,0);
+    // background: #fff;
     border-style: solid;
     border-width: 1px;
     border-left-color: #cfcfcf;
