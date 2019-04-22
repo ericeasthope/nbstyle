@@ -1,10 +1,10 @@
-# nbstrux
-Tweaks and hacks for Jupyter notebooks
+# nbstyle
+Personal UI styling for Jupyter notebooks
 
 In any code cell within a Jupyter notebook (Python 3),
 
 ```
-!pip install --upgrade --force-reinstall --user git+git://github.com/ericeasthope/nbstrux.git#egg=nbstrux
+!pip install --user git+git://github.com/ericeasthope/nbstyle.git#egg=nbstyle
 !jupyter nbextension install --py --user nbstyle
 !jupyter nbextension enable --py --user nbstyle
 ```
