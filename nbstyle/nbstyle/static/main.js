@@ -24,6 +24,8 @@ define([
 
         // append custom style sheets
         $("head").append(cssTag);
+        $('#header-container').hide();
+        $('#maintoolbar').hide();
     };
 
     // called when nbextension is to be loaded
