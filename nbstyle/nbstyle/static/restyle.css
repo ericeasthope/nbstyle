@@ -5,17 +5,17 @@
     -webkit-box-shadow: none;
     box-shadow: none;
 }
-        
+
 .notebook_app > #header {
     -webkit-box-shadow: none;
     box-shadow: none;
     border-bottom: 1px solid #cfcfcf
 }
-        
+
 div#notebook { padding-top: 0px; }
 
 .edit_mode div.cell.selected:before { background: #bb49ff; }
-  
+
 // div.cell { border-color: #fff; }
 // .input_prompt { display: auto; }
 div.input_prompt { color: #000; opacity: 0.2; }
@@ -27,14 +27,14 @@ div.output_prompt { color: #905; }
     border-bottom-color: #fff;
     border-left-color: #fff;
 }
-                  
+
 div.cell.selected {
     border-top-color: #fff;
     border-right-color: #fff;
     border-bottom-color: #fff;
     border-left-color: #fff;
 }
-                  
+
 .navbar-default {
     background-color: #fff;
     border-color: #fff;
@@ -43,13 +43,18 @@ div.cell.selected {
 .notebook_app { background-color: #fff; }
 
 div.input_area {
-    background: #fff;
+    background-color: rgba(0,0,0,0);
+    // background: #fff;
     border-style: solid;
-    border-width: 1px; 
+    border-width: 1px;
     border-left-color: #cfcfcf;
-    border-image: linear-gradient(to right, #cfcfcf 0%, #fff 66%);
+    border-image: linear-gradient(to right, rgba(207,207,207,1) 0%, rgba(0,0,0,0) 66%);
     border-image-slice: 1%;
 }
+
+div.inner_cell { z-index: 2; }
+div.CodeMirror { background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255,0,0,0) 66%); }
+div.output_subarea { overflow: visible; }
 
 // .code_cell .input .inner_cell { height: 100% }
 // .code_cell { border-color: #fff; flex-direction: row !important; }
