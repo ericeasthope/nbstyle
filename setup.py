@@ -3,7 +3,7 @@
 
 from setuptools import setup
 setup(
-    name="nbstrux",
+    name="nbstyle",
     packages=['nbstyle'],
     package_dir={
         'nbstyle': 'nbstyle/nbstyle'
