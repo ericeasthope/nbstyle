@@ -9,25 +9,41 @@ Authored by Eric Easthope
 All rights reserved.
 """
 
-# from setuptools import setup, find_packages
+from setuptools import setup
 import os
-import jupyter_core
+
+# import sys
+# import jupyter_core
+import subprocess
 from shutil import copyfile
 
-# Get path to Jupyter notebook custom CSS
-custom_path = os.path.join(jupyter_core.paths.jupyter_config_dir(), "custom")
 
-# Get path to Darkglow theme CSS
-darkglow_path = os.path.join(os.getcwd(), "css", "darkglow.css")
+def _post_install(setup):
+    def _post_actions():
+        # Get Jupyter notebook config directory
+        command = "jupyter --config-dir"
+        process = subprocess.Popen(command.split(), stdout=subprocess.PIPE)
+        output, error = process.communicate()
+        config_dir = output.decode("utf-8").replace("\n", "")
 
-# Copy theme to replace Jupyter notebook custom CSS
-copyfile(darkglow_path, os.path.join(custom_path, "custom.css"))
+        # Get path to Jupyter notebook custom CSS
+        custom_path = os.path.join(config_dir, "custom")
 
-"""
-setup(
-    name="nbstyle",
-    version="0.0.1",
-    author="Eric Easthope",
-    include_package_data=True,
+        # Get path to Darkglow theme CSS
+        darkglow_path = os.path.join(os.getcwd(), "css", "darkglow.css")
+
+        # Copy theme to replace Jupyter notebook custom CSS
+        copyfile(darkglow_path, os.path.join(custom_path, "custom.css"))
+
+    _post_actions()
+    return setup
+
+
+_post_install(
+    setup(
+        name="nbstyle",
+        version="0.0.1",
+        author="Eric Easthope",
+        include_package_data=True,
+    )
 )
-"""
