@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-
 """
 Automatic setup for custom Jupyter CSS
 
@@ -12,9 +11,6 @@ Copyright (c) 2020
 
 from setuptools import setup
 import os
-
-# import sys
-# import jupyter_core
 import subprocess
 from shutil import copyfile
 

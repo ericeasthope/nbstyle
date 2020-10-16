@@ -2,6 +2,8 @@
 
 UI styles for Jupyter notebooks. I'm currently working on `Darkglow`, a dark mode theme for tree views.
 
+![Darkglow theme](img/darkglow.png)
+
 To add the `Darkglow` theme (**warning**: this will replace `custom.css`), run:
 
 ```bash
