@@ -16,4 +16,4 @@ Please consider [supporting](https://www.ericeasthope.me/support) this work. Doi
 
 Authored by Eric Easthope
 
-MIT License
+MIT License - Copyright (c) 2020
