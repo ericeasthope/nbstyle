@@ -5,8 +5,9 @@
 """
 Automatic setup for custom Jupyter CSS
 
+Authored by Eric Easthope
 MIT License
-Copyright (c) 2020 Eric Easthope
+Copyright (c) 2020
 """
 
 from setuptools import setup
