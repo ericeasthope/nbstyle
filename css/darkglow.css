@@ -283,9 +283,13 @@ input[type="checkbox"] {
   font-size: 14px;
 }
 
-#running .list_item {
+#running .list_item:last-child {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
+}
+
+#running .panel-group .panel .panel-body .list_container .list_item {
+  border-bottom: 1px solid #000000;
 }
 
 /*
