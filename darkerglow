@@ -1,0 +1,14 @@
+#!/bin/bash
+
+SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )"
+
+read -r -p "This script will overwrite 'custom.css' with the Darkerglow theme. Are you sure? [y/N] " response
+case "$response" in
+    [yY][eE][sS]|[yY]) 
+        echo "Replacing 'custom.css' with Darkerglow theme ..."
+	yes | cp -rf $SCRIPT_DIR/css/darkerglow.css ~/.jupyter/custom/custom.css
+	echo "Done." && sleep 3
+        ;;
+    *)
+        ;;
+esac
